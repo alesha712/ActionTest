@@ -83,7 +83,7 @@ class DogViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    //Delete all files downloaded by the app
+    //Delete all existing files downloaded by the app
     suspend fun deleteAllImages() {
         withContext(Dispatchers.IO) {
             files.value?.forEach { item ->
